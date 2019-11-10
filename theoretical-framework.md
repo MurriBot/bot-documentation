@@ -123,18 +123,18 @@ Therefore, the event involved the public opinion so much that it became the most
 ### Chatbot Scope
 Bots are created with a purpose. It is really important to make clear what people can expect from our chatbot. The best way to set the scope is making it clear in the _welcome message_: the bot should introduce itself, explain what it can do and suggest a first task. It should also provide _continuous support_ through commands like "help", etc... The bot should drive the conversation forward and even restrict it, if necessary, through short interactions, as well as always respond, even when it does not understand the user's input. A focused bot that does a few things right is more useful than ones that barely breaches the surface.
 
+The scope of the implemented chatbot is edutainment. In particular the user-target corresponds to younger audiences using Facebook and Messenger. We wanted to create a technological medium that could entertain the users who use it, but, at the same time, let them learning something new, relevant from the historical, sociological, linguistic and literary points of view.
+
 ### Chatbot Target
 The chatbot game is directed mainly to young users to engage them in exploring the history of one of the most important murder cases ever happened in Italy. This engagement can provide a smarter way of leading younger audiences to interact with objects and historic environments with greater attention.
 
 ### Chatbot Personality
 The personality of the chatbot is one of the most important points to take into account. The content can stay minimal, but the medium does not have to. There is a clear distinction between the content and the delivery; the what and how. When users chat with the bot, they expect clear answers. However, you can use the opportunity to add a bit of flavor to the message. It has to fit perfectly with the user and with the specific situation. Defining in advance how the chatbot is going to be will be helpful eventually to decide how the bot will talk and act in every situation.
 
+The chatbot we designed and implemented has a human personality. He is a noir detective, called Detective Righi, and he is able to have a conversation with a real human being (the player) characterized by a very realistic and familiar linguistic style. In fact, the user does not to have the perception of talking to a computer, but with a human man who is investigating to discover the culprit of a crime. 
+
 ### Chatbot Features
 These represent information any user would need from the chatbot to find it usable and fun. Messaging apps let us remove most interface elements and reduce the experience to a simple message thread. Chatbots live within messaging apps and users are already accustomed to communicating with friends using text, but images and structured content are also an excellent way to present information in a more interesting way.
-
-* a way to check clues
-
-* a way to make a guess and go forward
 
 ### Chatbot Flow
 This is a model of the chatbot behavior in every possible scenario during its interaction with the user. It must highlight:
@@ -145,50 +145,124 @@ This is a model of the chatbot behavior in every possible scenario during its in
 
 3) every possible scenario the bot will need to deal with.
 
-Interaction should be simple. The number of paths a conversation can take increases the potential for dead ends. It is better to limit the functionality and nudge the user down a particular path: a simple solution is to use structured messages to guide the users. 
+Interaction should be simple. The number of paths a conversation can take increases the potential for dead ends. It is better to limit the functionality and nudge the user down a particular path: a simple solution is to use structured messages to guide the users.
 
 ## The Chain of Clues, or: How to Solve the Mystery
-The player will be able to try to determine who was the culprit of Bonmartini’s death, starting from some clues suggested by the bot. They will obtain these clues by questioning the bot about the characters involved in the murder, the crime scene, the objects present in there, the characteristics and peculiarities of the corpse. Having a dialogue made of questions and answers with the bot, users will be completely captivated in the atmosphere of a real crime, playing the role of a true detective in the real setting in which Bonmartini was killed.
+The goal of the players is to find out who killed the Count Bonmartini. They can discover it interacting with the chatbot, which is a detective, called Detective Righi, acting on the crime scene.
 
-### First clue
-The first step to rebuild the events in order to determine which are the clues to suggest, was to gather some information about the dead body appearance. Users are told that they first saw the corpse and they noticed that **the victim was robbed of his wallet and documents**, so their first hypothesis is that this is a case of **robbery** gone wrong.
+The player will be able to try to determine who was the culprit of Bonmartini’s death, starting from some clues suggested by the bot. They will obtain these clues by questioning the bot about the characters involved in the murder, the crime scene, the objects present in there, the characteristics and peculiarities of the corpse. By having a dialogue made of questions and answers with the bot, users will be completely captivated in the atmosphere of a real crime, playing the role of a true detective in the real setting in which Bonmartini was killed.
 
-### Second clue
-The player will be able to look at the forensic analysis report. Some notes related to the status of the body reveal the second clue:**"Very precise cuts, probably inflicet by a professional."**
+At first, the chatbot setups a dialogue with the player, in a way that users will be completely captivated in the atmosphere of a real crime, playing the role of a true detective in the real setting and time in which the Count Bonmartini was killed:
 
-### Third clue
-Now, users are invited to investigate the room to see if they find clues able to validate the hypothesis of the break in. Since it is not possible to visit it at the moment, we read some documents that describe the conditions of the environment when the corpse was found in detail in order to obtain a historically valid reconstruction.
-In Bonmartini’s room, everything seemed to be quite in order: its entrance door was not forced, every drawer was perfectly closed, all the objects in their place, no track of thieves anywhere. It was as if nothing had happened. The hypothesis of the theft or armed robbery has to be rejected.
+* Setting: During the game, the player will gather evidence in the place in which the Count was found dead. In particular, she will be led by the detective to the building where Bonmartini lived. She will get into his flat, searching for clues in the antechamber of his room and in his room itself.
 
-### Fourth clue
-In the room there is a basket with a little bit of rubbish which no one had thrown away in the days before, and a well-ordered bookcase in which some books by eminent authors were kept, including Gustave Flaubert’s ones, the French writer really loved by Linda, the Count’s wife. In front of the door, there is a bed which was not made, as if someone, after getting up in the morning, had left it undone and went away in a hurry. Among the sheets, a pair of almost new women’s panties are found. The fact that, next to the bed, there are also a half-empty bottle of Champagne, whose expensive and refined brand was Gancia Canelli, and two glasses as well, suggested that an alleged lover could be involved in the murder. Another two proofs support this hypothesis: a hair in a chamber pot, which is in front of a window that overlooks Bologna, and a note that is found in one of the night stand drawers. It is written by a woman (a fact assumed by looking at the calligraphy, which seems feminine), whose name was not entirely reported, but only its initial letter is known: B. It said:
+* Time: The dialogue starts with a greeting by the chatbot to the player. It says: “Good afternoon”. It is very important, since it shows that the time in which the communication is set corresponds to the real day on which the corpse was found. In particular, we are on 2nd September 1902 and it is afternoon. Now the investigations are about to begin.
 
-`Dear Count,
-It’s fine for Thursday 27th, even the hour. However, I would like you to be at the door of Via Pusterla because in that place you are seen so much better by the tenants that are in front of you. Meanwhile, I just have to kiss you a lot.
-Distinctly yours, B.`
+During the whole dialogue with the chatbot, the player will be able to gather evidence:
 
-### Fifth clue
-But aren’t all these clues a bit too obvious? We know that, speaking about a crime, the red herring is a fact of reality. In fact, another object is present in that room and plays a fundamental role in the resolution of the murder: a wooden trunk in which two notes are found. They were written by Linda to Nino, the nickname of her brother Tullio. The first one says:
+* About the corpse: At first, the user will be provided with the autopsy document (represented by means of two images). It is made of two parts: the first sheet shows a brief anatomic summary, through which the player will know that the Count was stabbed thirteen times; the second sheet corresponds to the sketch of the body, characterized by thirteen stab wounds all along it. There is also the doctor’s opinion: “Autopsy findings are characteristic of a murder”. Then, he will be able to see the dead body (represented by means of an image) onto a corner of the antechamber of his room.
 
-`Dear Nino,
-I almost imagine what you have told me about the extraordinary event, I bet A. is involved and the other actor is you. I had guessed a terno! I am too curious to know from you. Linda`
+* About the crime scene: A map representing the floor plan of Bonmartini’s room is provided to the user. In several steps, the user will be able to interact with every object present there, looking for clues support her hypothesis and make her formulate a thesis. In particular, the player will discover clues interacting with:
 
-The second note says:
+	* The entrance door: The entrance door lock appears unforced. The culprit cannot be a thief. The killer has to be one member of the family or a Bonmartini’s friend, since he does have the keys to get into without forcing the door lock.
+	
+	* Drawers: They look in order, every object in its place. Opening one of them, the user will discover a letter, whose recipient is the Count. Probably Bonmartini had a secret lover, but she cannot be the culprit, since the solution of the mystery would be too easy.
+	
+	* Bed: The bed is the only one thing in the room that appears to be untidy. It is unmade, like something's been going on. If the user checks it, she will discover a pair of woman’s panties among the sheets. Probably Bonmartini had a secret lover, but she cannot be the culprit, since the solution of the mystery would be too easy.
+	
+	* Champagne bottle and glasses: They are on a table next to the bed. The bottle is half-empty and the glasses dirty. Probably Bonmartini had a secret lover, but she cannot be the culprit, since the solution of the mystery would be too easy.
+	
+	* Chamber pot: The user will find out an hair next to the chamber pot. The hair is of a woman. Probably Bonmartini had a secret lover, but she cannot be the culprit, since the solution of the mystery would be too easy.
+	
+	* Chest: Opening it, the user will find two notes by Linda to “Nino”, Tullio’s nickname given by his sister. These two notes will be important later: Tullio and Linda are speaking about a poison.
+	
+	* Bin: The bin is full, so someone used it and nobody cleaned it up before Bonmartini’s death. By emptying it, the player will discover a vial of curare poison. At the end of the game, the user would probably understand that the killers had tried to poison Bonmartini to kill him, but, since that dose was not lethal to a man, they had stabbed him instead.
 
-`Dear Nino,
-I do not know anything about S. anymore: did the medicine work? Write me a note and have many kisses.
-Linda`
+* About the characters: First, a genealogical tree of Murri’s family is displayed. The following characters are present in there:
 
-The final object that corresponds to a clue is a vial of poison, found in the basket at the entrance. This is the object that unlocks the mystery of who killed the Count. In fact, there is a meaningful link between the note written by Linda to Nino about a strange “medicine” and the vial thrown in the bin. It is not a case that the player will know about the vial at the end of the game: even in the real case, it was noticed when the inestigation was at a dead end.
+	* Augusto Murri: the head of the family;
+	* Linda Murri: Augusto's daughter;
+	* Tullio Murri: Augusto's son and Linda's brother;
+	* Francesco Bonmartini: Linda's husband;
+	* Carlo Secchi: Augusto's pupil and Linda's lover;
+	* Tisa Borghi: Carlo Secchi's nurse and lover.
 
-### End
-At this point, the interactive game is finished. In order to maintain the historical truth we end with what happened to all the characters during the process:
+At this point, the user can make questions about each of these characters. It will be said:
 
+* about Augusto: Well-known clinician and professor at University of Bologna, exponent of the Positive culture. Shortly before Bonmartini’s death, he did not accept him as assistant: “For personal reasons between him and me” he said. In fact, he did not accept that the relationship between Linda and Bonmartini had long since cracked.
+
+* about Linda: Linda was an enigmatic woman: she was considered a “modest little housewife” with a strong maternal sensitivity, but her great emotional control made her stand out. She did not lead an excellent marital life: people said that she had rented a small flat for her love conventions, after coming back to her husband after a brief separation.
+
+* about Tullio: Tullio Murri, a layer, was a pleasure-loving man, who spent his life between women, cards and politics. Similar to d’Annunzio character, his nature was impetuous. He believed that Bonmartini was psychologically insensitive and for this reason his sister was threatened and had to be defended against everything.
+
+* about Bonmartini: The player obtains information about him at the beginning of the game. About him: the Count Francesco Bonmartini was found dead in his house on 2nd September 1902. Before his death, he tried to become an assistant of his father-in-law Augusto, clinician and professor. Augusto refused. Bonmartini declared that he would leave Bologna to move to Padova with his children.
+
+* about Carlo: Prominent otolaryngologist and Augusto’s pupil. Secchi was the man who had been denied to Linda by her family because of his age, 20 years older, before her marriage with Bonmartini. After Bonmartini’s death, he was accused of being Linda’s lover. The accusation was grounded.
+
+* About Tisa: Already a nurse at Istituto Rizzoli, where Carlo Secchi had known her. She became his assistant and servant, after being his lover. She was a cold woman, used to keeping herself locked in her own secrets. But she was not reluctant to declare her hatred towards Linda. Without ever revealing the true reasons of that hatred.
+
+These information are shown to the player by means of some cards, each one of them corresponding to one character. Every card is a different color, which represents the main characteristic of the character’s personality. In addition a symbol is used for the same purpose:
+
+* Augusto Murri > White as his pure creed in Positivism. A syringe as symbol since he is an acute doctor, sometimes scary.
+
+* Linda Murri > Purple as her ambiguity. A rose as symbol for her sensitivity, but at the same time passion for lovers.
+
+* Tullio Murri > Blue as his dark personality. Cards as symbol of his arcane personality.
+
+* Francesco Bonmartini > Red like his blood shed. Knife as symbol of his last day on earth.
+
+* Carlo Secchi > Orange like his energy. Even if he is an old man, he is able to mantain the relationships with two ladies. Stethoscope as symbol of his job. He will be the doctor that will provide the poison to kill the Count.
+
+* Tisa Borghi > Yellow as her jealousy towards Linda. Menacing eye as symbol of her dangerous personality.
+
+After having all the information about the characters, the player can continue the game by interrogating each individual person at once. The interrogatory will proceed as follow, starting necessarily with Tisa and then Carlo:
+
+* Tisa > The user asks her if she knows curare. She says that she knows that it is a poison and reveals that recently she has been asked to bring it to a certain… but she does not finish the sentence and so she does not reveal the name of who wanted the poison.
+
+* Carlo > He explains that the curare was necessary for an experiment on a lamb. He would do that experiment.
+
+* Augusto > Augusto asks why he is asked about curaro. He reminds that Bonmartini was stabbed, not poisoned, also because curaro is lethal on animals like lambs, not on human beings, because of their excessive size. In addition, he reveals that he does not know Tisa Borghi.
+
+* Linda > Linda contradicts herself during the interrogation. First, she claims not to know what the curare is, but then, by mistake, to the question on lamb experiment she says: “I feel outraged [...] I find myself talking about poison and lambs [...].”. This sentence shows that she was really aware of what the curare is. 
+
+* Tullio > When he is asked if Tisa is involved in the poison issue, he says that he never asked her to bring him it. But no one had asked! In addition, he speaks about certain notes in Bonmartini’s chest as attempt to bring his family down. But how does he know the fact of notes, since the crime scene is a closed area?
+
+At this point, the user has to gather all the evidence together and try to say who is the culprit (just one person or more than one).
+
+The killers are Tullio and Linda, who first tried to kill Bonmartini poisoning him, then stabbing him the final death. This because Tullio did not approve of Bonmartini and Linda wanted Carlo Secchi, her lover, as husband. 
+
+ After the accusation, the interactive game is finished. In order to maintain the historical truth, if the player guesses the right killer/killers, we end with what happened to all the characters during the process:
+ 
 * Linda Murri was involved in the plan of the murder and was arrested. She was released after 1 year for a concession of King Vittorio Emanuele III. He wanted to reward Augusto, who had cured the King’s daughter, Mafalda.			
+
 * Tullio Murri was arrested on charges of murder. He was reported by his father Augusto, who read a letter of confession written by his son before giving himself up to the police. He said: “I killed to defend me. This is the pure truth.”				
 * Augusto Murri accused his son to be the killer of Francesco Bonmartini after reading the Bonmartini’s letter of confession, but said to have destroyed it. He did not want his wife to find it out. After two years of legal process, he came back to the University of Bologna.	
+
 * Carlo Secchi was arrested on charges of being an accessory to the crime. Tisa Borghi accused him to have provided Tullio Murri with the poison to kill Bonmartini. After a period in prison, he committed suicide.
-* Tisa Borghi had the possibility of confessing everything in order not to be imprisoned. She told the police that Carlo Secchi prepared a vial of curare to be used to kill Bonmartini. She avoided the jail.
+
+* Tisa Borghi had the possibility of confessing everything in order not to be imprisoned. She told the police that Carlo Secchi prepared a vial of curare to be used to kill Bonmartini. She avoided the jail. 
+
+If the player accuses the wrong person/people, she has to start the game all over again.
+
+Overall, the narration has a very precise structure. It reflects the order in which the investigations are carried out: the corpse is checked, the crime scene is checked, a list of suspects is drawn up, a certain person is questioned and accused rather than another.
+
+Also the images of the crime scene and the objects present in there contribute to create the atmosphere of a real crime and investigations.
+
+We implemented the chatbot at issue using an online tool called “ManyChat” (https://manychat.com/), which allowed us to setup a dialogue between the bot and the human user. The dialogue has the following structure: the bot tell or ask something to the user (for example, the bot asks the user which object she wants to interact with to discover some clues), and the user can answer selecting one of the options shown by the bot, until the end of the game. The options could be one, two or three. In this way, a graph containing all the possible choices - connected each other - is generated.
+
+[...]
+
+[...]
+
+In addition, ManyChat allows us to gather some data about the users: their profile image, their name, gender, status (subscribed or not to the chatbot) and subscribed (the last time they accessed the bot). We could use to adapt the features of the bot to the users’ characteristics.
+
+[...]
+
+[...]
+
+Eventually, the tool also shows some statistical data, useful to check the number of users per day. If the statistical data would show too few users, we could understand that it could be necessary to study strategies to make the bot more attractive.
+
+[...]
 
 ## Conclusion
 Though it is a very simple bot with hardly any cognitive skills, it has been a good way to get into storytelling on social media and to get to know about chatbots by helping us think through the design and challenge of creating a chatbot within a certain theoretical framework.
