@@ -191,7 +191,7 @@ At this point, the interactive game is finished. In order to maintain the histor
 * Tisa Borghi had the possibility of confessing everything in order not to be imprisoned. She told the police that Carlo Secchi prepared a vial of curare to be used to kill Bonmartini. She avoided the jail.
 
 ## Conclusion
-Though it is a very simple bot with hardly any cognitive skills, it has been a good way to get into NLP and get to know about chatbots by helping us think through the design and challenge of creating a chatbot within a certain theoretical framework.
+Though it is a very simple bot with hardly any cognitive skills, it has been a good way to get into storytelling on social media and to get to know about chatbots by helping us think through the design and challenge of creating a chatbot within a certain theoretical framework.
 
 ### Future Developments
 * A non-linear structure of the conversation.
