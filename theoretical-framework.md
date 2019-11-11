@@ -63,7 +63,7 @@ Chatbots are usually deployed in companies to engage with their customers and su
 
 From a culturally-driven and historically-aware perspective, chatbots could be an excellent engaging tool by gamifying the cultural experience.[6] A gamified chatbot allows to implement narrative into the design of the experience and give it a more supportive and immersive feel. An exemplary case study is represented by the chatbot developed by Invisible Studio and employed by the House Museums of Milan.[7]
 
-# Narrative
+# Narrative [8]
 
 ## The Case of Murri: an historical introduction
 
