@@ -280,3 +280,4 @@ Though it is a very simple bot with hardly any cognitive skills, it has been a g
 * [5] https://www.drift.com/learn/chatbot/
 * [6] https://chatbotsmagazine.com/how-museums-are-using-chatbots-5-real-world-examples-34e9d4858dd9
 * [7] https://invisiblestudio.it/new/portfolio/chatbot-game/
+* [8] Babini, Valeria Paola. Il caso Murri: una storia italiana. Il mulino, 2004.
